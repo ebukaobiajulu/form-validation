@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.form-section{
+    background: url(./images/pexels-chelsey-horne-4506939.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo i{
+    background-color: white;
+    color: rgb(28, 28, 29);
+    font-size: 2rem;
+    border-radius: 50%;
+    /* padding: 1rem; */
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.input-control input{
+    padding: 0.6rem 4rem 0.6rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: solid 1px rgb(28, 28, 29, 0.3);
+    outline: none;
+    
+}
+.input-control{
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.form{
+    background-color: white;
+    padding: 2rem;
+    margin-top: 0.6rem;
+    border-radius: 20px;
+}
+
+.submit-btn{
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #3A1C71;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); 
+
+
+}
+.error-message{
+    font-size: 0.8rem;
+    color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    
+}
+.input-control.error .error-shape{
+    visibility: visible;
+    background-color: red;
+}
+.input-control.success .error-shape{
+    visibility: visible;
+    background-color: green;
+}
+.error-shape{
+    width: 6px;
+    height: 6px;
+    /* background-color: red; */
+    border-radius: 50%;
+    visibility: hidden;
+    position: absolute;
+    top: 15px;
+    left: -10px;
+
+}
+.second-text{
+    position: relative;
+}
+.second-text h1{
+    color: rgb(143, 55, 69);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+}
+
+/* .second-text h1::after{
+    width: 6rem;
+    margin-left: 3rem ;
+    height: 5px;
+    display: block;
+    background-color: black;
+    content: '';
+    position: absolute;
+    bottom: 0;
+} */
+.second-text{
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem ;
+    /* position: relative; */
+}
+
+.bg-text{
+    font-size: 4rem;
+    top: 0;
+    left: calc(50% - 6rem);
+    z-index: -1;
+    position: absolute;
+    display: inline-block;
+}
+/* .shape{
+    width: 15px;
+    height: 5px;
+    background-color: #D76D77;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+
+} */
+.input-control.error .error-message{
+    visibility: visible;
+    
+}
+.input-control.success .error-message{
+    visibility: visible;
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
